@@ -100,6 +100,10 @@ img {
 .hover-in-shadow:hover::after {
   box-shadow: var(--inner-shadow);
 }
+
+.align-items-center {
+  align-items: center;
+}
 /*------
   Header
 -------*/
@@ -180,7 +184,9 @@ NavBar Menu
   top: 0;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
   overflow-y: auto;
 }
 
@@ -250,4 +256,35 @@ NavBar Menu
   font-size: 15px;
   color: var(--text-black-600);
   transform: translate(-50%) rotate(-90deg);
+}
+
+/*------------- 
+  Home Section 
+--------------*/
+
+.home-section .full-screen {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+.home-section .home-text,
+.home-section .home-img {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+.home-section .home-text {
+  background-color: violet;
+}
+.home-section .home-img .img-box {
+  background-color: red;
+  max-width: 450px;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.home-section .home-img .img-box img {
+  width: 100%;
+  border-radius: 50%;
 }
