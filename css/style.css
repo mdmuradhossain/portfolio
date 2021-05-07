@@ -451,3 +451,14 @@ About Section
 .about-section .about-tabs .tab-item.active {
   color: var(--skin-color);
 }
+
+.about-section .tab-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about-section .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-betweeni;
+}
