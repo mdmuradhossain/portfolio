@@ -637,12 +637,17 @@ Portfolio Section
   top: 15px;
   text-align: center;
   line-height: 35px;
-  font-size: 35px;
+  font-size: 30px;
   color: var(--text-black-600);
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
+.portfolio-popup .pp-close i {
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
 .portfolio-popup .pp-close::after {
   border-radius: 50%;
 }
