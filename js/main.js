@@ -65,10 +65,24 @@
       screenshots = screenshots.split(",");
       slideIndex = 0;
       popupToggle();
+      popupSlideshow();
     }
   });
 
+  closeBtn.addEventListener("click", () => {
+    popupToggle();
+  });
   function popupToggle() {
     popup.classList.toggle("open");
+  }
+  function popupSlideshow() {
+    const imgSrc = screenshots[slideIndex];
+    const popupImg = popup.querySelector(".pp-img");
+    popup.querySelector(".pp-loader").classList.add("active");
+    popupImg.src = imgSrc;
+
+    popupImg.onload = () => {
+      popup.querySelector(".pp-loader").classList.remove("active");
+    };
   }
 })();
