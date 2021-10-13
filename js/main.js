@@ -84,5 +84,7 @@
     popupImg.onload = () => {
       popup.querySelector(".pp-loader").classList.remove("active");
     };
+    popup.querySelector(".pp-counter").innerHTML =
+      slideIndex + 1 + " of " + screenshots.length;
   }
 })();
