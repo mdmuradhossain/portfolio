@@ -461,7 +461,7 @@ About Section
 .about-section .skills {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .about-section .skills .skill .skill-list .skill-item {
   margin-bottom: 5px;
@@ -487,7 +487,7 @@ Portfolio Section
 
 .portfolio-section {
   padding: 80px 0 80px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
 }
 
 .portfolio-section .section-title {
@@ -578,7 +578,7 @@ Portfolio Section
 /*--------------
  Portfolio Popup
  --------------- */
-.portfolio-popup {
+/* .portfolio-popup {
   background-color: var(--bg-black-50);
   position: fixed;
   left: 0;
@@ -588,11 +588,11 @@ Portfolio Section
   z-index: 1000;
   overflow-y: auto;
   opacity: 0;
-  visibility: hidden;
-}
+  /* visibility: hidden; */
+/* display: none; */
+/* } */
 
 .portfolio-popup.open {
-  visibility: visible;
   opacity: 1;
 }
 
@@ -600,7 +600,7 @@ Portfolio Section
   visibility: visible;
   opacity: 1;
 }
-.portfolio-popup .pp-loader {
+*/ .portfolio-popup .pp-loader {
   /* position: fixed;
   left: 0;
   top: 0;
@@ -621,7 +621,7 @@ Portfolio Section
   border-right: 3px solid transparent;
   animation: spin 2s linear infinite; */
 }
-.portfolio-popup .pp-details {
+/* .portfolio-popup .pp-details {
   max-width: 1350px;
   width: calc(85% + 30px);
   margin: auto;
@@ -818,4 +818,55 @@ Portfolio Section
 .portfolio-popup .pp-prev:hover,
 .portfolio-popup .pp-next:hover {
   opacity: 1;
+} */
+
+/*-------------
+Contact Section
+-------------*/
+.contact-section {
+  padding: 80px 0 80px;
+  min-height: 100vh;
+}
+
+.contact-section .contact-item {
+  flex: 0 0 33.33%;
+  padding: 15px;
+}
+
+.contact-section .contact-item-inner {
+  padding: 30px 15px;
+  text-align: center;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.contact-section .contact-item-inner i {
+  font-size: 25px;
+  color: var(--skin-color);
+}
+.contact-section .contact-item-inner span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black-700);
+  margin: 15px 0 5px;
+  text-transform: capitalize;
+}
+
+.contact-section .contact-item-inner p {
+  font-size: 16px;
+  color: var(--text-black-600);
+  line-height: 26px;
+  margin: 0;
+  word-break: break-word;
+}
+
+/* Footer */
+
+footer p {
+  color: var(--text-black-700);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
 }
