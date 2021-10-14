@@ -476,8 +476,11 @@ About Section
   color: var(--text-black-900);
   text-transform: uppercase;
   margin: 0;
+  text-align: center;
 }
-
+.about-section .skills .skill.backend h2 {
+  margin-left: 20px;
+}
 /*----------------
 Portfolio Section
 -----------------*/
