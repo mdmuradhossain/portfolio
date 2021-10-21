@@ -88,3 +88,21 @@
 //       slideIndex + 1 + " of " + screenshots.length;
 //   }
 // })();
+
+// typingEffect
+var position = document.querySelector(".designation");
+
+var typewriter = new Typewriter(position, {
+  loop: true,
+});
+
+typewriter
+  .typeString("Software Developer")
+  .pauseFor(2500)
+  .deleteAll()
+  .typeString("Java Developer")
+  .pauseFor(2500)
+  .deleteAll()
+  .typeString("<strong>Web Developer</strong>")
+  .pauseFor(2500)
+  .start();

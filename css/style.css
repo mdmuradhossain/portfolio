@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap");
 /*-------
  Color
  -------*/
@@ -28,6 +29,7 @@ Global Style
 
 *:not(i) {
   font-family: "Raleway", sans-serif;
+  /* font-family: "JetBrains Mono", monospace; */
   font-weight: 400;
 }
 body {
@@ -307,7 +309,7 @@ NavBar Menu
   margin: 0;
 }
 
-.home-section .home-text h1 {
+.home-section .home-text .designation {
   font-size: 20px;
   font-weight: 500;
   color: var(--text-black-700);
@@ -376,7 +378,7 @@ About Section
 }
 
 .about-section .about-info p {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
   margin-bottom: 15px;
   color: var(--text-black-600);
