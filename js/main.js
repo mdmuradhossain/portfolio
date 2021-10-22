@@ -10,6 +10,14 @@
   }
   function hideNavMenu() {
     navMenu.classList.remove("open");
+    fadeOutEffect();
+  }
+
+  function fadeOutEffect() {
+    document.querySelector(".fade-out-effect").classList.add("active");
+    setTimeout(() => {
+      document.querySelector(".fade-out-effect").classList.remove("active");
+    }, 300);
   }
 })();
 // (() => {
