@@ -7,10 +7,12 @@
   closeNavBtn.addEventListener("click", hideNavMenu);
   function showNavMenu() {
     navMenu.classList.toggle("open");
+    // bodyScrollingToggle();
   }
   function hideNavMenu() {
     navMenu.classList.remove("open");
     fadeOutEffect();
+    // bodyScrollingToggle();
   }
 
   function fadeOutEffect() {
@@ -19,6 +21,34 @@
       document.querySelector(".fade-out-effect").classList.remove("active");
     }, 300);
   }
+
+  document.addEventListener("click", (e) => {
+    if (e.target.classList.contains("link-item")) {
+      // console.log(e.target.hash);
+      if (e.target.hash !== "") {
+        e.preventDefault();
+        const hash = e.target.hash;
+        document.querySelector(".section.active").classList.add("hide");
+        document.querySelector(".section.active").classList.remove("active");
+
+        document.querySelector(hash).classList.add("active");
+        document.querySelector(hash).classList.remove("hide");
+
+        navMenu
+          .querySelector(".active")
+          .classList.add("outer-shadow", "hover-in-shadow");
+
+        navMenu
+          .querySelector(".active")
+          .classList.remove("active", "inner-shadow");
+        e.target.classList.add("active", "inner-shadow");
+        e.target.classList.remove("outer-shadow", "hover-in-shadow");
+        hideNavMenu();
+      }
+    } else {
+      console.log("not contains");
+    }
+  });
 })();
 // (() => {
 //   const aboutSection = document.querySelector(".about-section"),

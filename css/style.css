@@ -494,10 +494,14 @@ About Section
   max-width: 100%;
 }
 
-.about-section .skills {
+/*----------------
+ Skills Section 
+----------------*/
+
+.skills {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .skill-list .skill-item {
   font-size: 1rem;

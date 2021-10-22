@@ -32,7 +32,9 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="link-item inner-shadow active">Home</a></li>
+          <li>
+            <a href="#home" class="link-item inner-shadow active">Home</a>
+          </li>
           <li>
             <a href="#about" class="link-item outer-shadow hover-in-shadow"
               >About</a
@@ -44,7 +46,7 @@
             >
           </li>
           <li>
-            <a href="#project" class="link-item outer-shadow hover-in-shadow"
+            <a href="#portfolio" class="link-item outer-shadow hover-in-shadow"
               >Portfolio</a
             >
           </li>
@@ -67,7 +69,7 @@
     <div class="fade-out-effect"></div>
     <!-- NavBar End -->
     <!-- Home Section Start -->
-    <section class="home-section section">
+    <section class="home-section section active" id="home">
       <div class="container">
         <div class="row full-screen align-items-center">
           <div class="home-text">
@@ -177,69 +179,6 @@
           </div>
         </div>
 
-        <!-- About Tabs Start -->
-        <div class="row" id="skills">
-          <div class="about-tabs">
-            <span class="tab-item outer-shadow active" data-target=".skills"
-              >Skills</span
-            >
-            <!-- <span class="tab-item" data-target=".experience">Experience</span>
-            <span class="tab-item" data-target=".education">Education</span> -->
-          </div>
-        </div>
-        <!-- About Tabs End -->
-        <!-- Skills Start-->
-
-        <div class="row">
-          <div class="skills tab-content active">
-            <div class="skill frontend">
-              <h2>FrontEnd</h2>
-              <ul class="skill-list">
-                <li class="outer-shadow skill-item hover-in-shadow">HTML</li>
-                <li class="outer-shadow skill-item hover-in-shadow">CSS</li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Javascript
-                </li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Bootstrap
-                </li>
-                <li class="outer-shadow skill-item hover-in-shadow">Angular</li>
-              </ul>
-            </div>
-            <div class="skill backend">
-              <h2>Backend</h2>
-              <ul class="skill-list">
-                <li class="outer-shadow skill-item hover-in-shadow">Java</li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Spring Framework
-                </li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Spring Data JPA
-                </li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Spring Security
-                </li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  MySQL/MongoDB
-                </li>
-              </ul>
-            </div>
-            <div class="skill tools">
-              <h2>Tools</h2>
-              <ul class="skill-list">
-                <li class="outer-shadow skill-item hover-in-shadow">Git</li>
-                <li class="outer-shadow skill-item hover-in-shadow">Maven</li>
-                <li class="outer-shadow skill-item hover-in-shadow">Docker</li>
-                <li class="outer-shadow skill-item hover-in-shadow">Jenkins</li>
-                <li class="outer-shadow skill-item hover-in-shadow">
-                  Unit Test
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <!-- Skills End -->
         <!-- Experience Start -->
         <!-- <div class="row">
           <div class="experience tab-content">
@@ -256,10 +195,67 @@
         <!-- Education End -->
       </div>
     </section>
+    <section class="skill-section section" id="skills">
+      <!-- About Tabs Start -->
+      <div class="row">
+        <div class="section-title">
+          <h2 data-heading="language & tools">Skills</h2>
+        </div>
+      </div>
+      <!-- Skills Start-->
+
+      <div class="skill-content">
+        <div class="skills active">
+          <div class="skill frontend">
+            <h2 style="text-align: center">FrontEnd</h2>
+            <ul class="skill-list">
+              <li class="outer-shadow skill-item hover-in-shadow">HTML</li>
+              <li class="outer-shadow skill-item hover-in-shadow">CSS</li>
+              <li class="outer-shadow skill-item hover-in-shadow">
+                Javascript
+              </li>
+              <li class="outer-shadow skill-item hover-in-shadow">Bootstrap</li>
+              <li class="outer-shadow skill-item hover-in-shadow">Angular</li>
+            </ul>
+          </div>
+          <div class="skill backend">
+            <h2 style="text-align: center">Backend</h2>
+            <ul class="skill-list">
+              <li class="outer-shadow skill-item hover-in-shadow">Java</li>
+              <li class="outer-shadow skill-item hover-in-shadow">
+                Spring Framework
+              </li>
+              <li class="outer-shadow skill-item hover-in-shadow">
+                Spring Data JPA
+              </li>
+              <li class="outer-shadow skill-item hover-in-shadow">
+                Spring Security
+              </li>
+              <li class="outer-shadow skill-item hover-in-shadow">
+                MySQL/MongoDB
+              </li>
+            </ul>
+          </div>
+          <div class="skill tools">
+            <h2 style="text-align: center">Tools</h2>
+            <ul class="skill-list">
+              <li class="outer-shadow skill-item hover-in-shadow">Git</li>
+              <li class="outer-shadow skill-item hover-in-shadow">Maven</li>
+              <li class="outer-shadow skill-item hover-in-shadow">Docker</li>
+              <li class="outer-shadow skill-item hover-in-shadow">Jenkins</li>
+              <li class="outer-shadow skill-item hover-in-shadow">Unit Test</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills End -->
+      <!-- About Tabs End -->
+    </section>
     <!-- About Section End -->
 
     <!-- Portfolio Section Start-->
-    <section class="portfolio-section" id="project">
+    <section class="portfolio-section section" id="portfolio">
       <div class="container">
         <div class="row">
           <div class="section-title">
