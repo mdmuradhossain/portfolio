@@ -1,3 +1,17 @@
+(() => {
+  const hanmburgerBtn = document.querySelector(".hamburger-btn"),
+    navMenu = document.querySelector(".nav-menu"),
+    closeNavBtn = document.querySelector(".close-nav-menu");
+
+  hanmburgerBtn.addEventListener("click", showNavMenu);
+  closeNavBtn.addEventListener("click", hideNavMenu);
+  function showNavMenu() {
+    navMenu.classList.toggle("open");
+  }
+  function hideNavMenu() {
+    navMenu.classList.remove("open");
+  }
+})();
 // (() => {
 //   const aboutSection = document.querySelector(".about-section"),
 //     tabsContainer = document.querySelector(".about-tabs");

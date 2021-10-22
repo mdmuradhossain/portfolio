@@ -32,21 +32,37 @@
       <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
       <div class="nav-menu-inner">
         <ul>
-          <li><a href="#" class="inner-shadow active">Home</a></li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">About</a></li>
+          <li><a href="#" class="link-item inner-shadow active">Home</a></li>
           <li>
-            <a href="#skills" class="outer-shadow hover-in-shadow">Skills</a>
+            <a href="#about" class="link-item outer-shadow hover-in-shadow"
+              >About</a
+            >
           </li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">Portfolio</a>
+            <a href="#skills" class="link-item outer-shadow hover-in-shadow"
+              >Skills</a
+            >
           </li>
           <li>
-            <a href="#" class="outer-shadow hover-in-shadow">Testimonial</a>
+            <a href="#project" class="link-item outer-shadow hover-in-shadow"
+              >Portfolio</a
+            >
           </li>
-          <li><a href="#" class="outer-shadow hover-in-shadow">Contact</a></li>
+          <!-- <li>
+            <a href="#" class="link-item outer-shadow hover-in-shadow"
+              >Testimonial</a
+            >
+          </li> -->
+          <li>
+            <a href="#contact" class="link-item outer-shadow hover-in-shadow"
+              >Contact</a
+            >
+          </li>
         </ul>
       </div>
-      <p class="copyright-text">&copy; 2020, Md Murad Hossain</p>
+      <p class="copyright-text" style="font-weight: 800">
+        &copy; 2021, Md Murad Hossain
+      </p>
     </nav>
     <!-- NavBar End -->
     <!-- Home Section Start -->
@@ -161,7 +177,7 @@
         </div>
 
         <!-- About Tabs Start -->
-        <div class="row">
+        <div class="row" id="skills">
           <div class="about-tabs">
             <span class="tab-item outer-shadow active" data-target=".skills"
               >Skills</span
@@ -173,7 +189,7 @@
         <!-- About Tabs End -->
         <!-- Skills Start-->
 
-        <div class="row" id="skills">
+        <div class="row">
           <div class="skills tab-content active">
             <div class="skill frontend">
               <h2>FrontEnd</h2>
@@ -242,7 +258,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start-->
-    <section class="portfolio-section">
+    <section class="portfolio-section" id="project">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -589,7 +605,7 @@
     <!-- Portfolio Popup End -->
 
     <!-- Start Contact Section -->
-    <section class="contact-section section">
+    <section class="contact-section section" id="contact">
       <div class="container">
         <div class="row">
           <div class="section-title">
