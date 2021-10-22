@@ -467,12 +467,17 @@ About Section
   flex-direction: row;
   justify-content: space-around;
 }
-.about-section .skills .skill .skill-list .skill-item {
+.skill-list .skill-item {
+  font-size: 1rem;
   margin-bottom: 5px;
   padding: 10px;
   text-align: center;
-  font-weight: var(--text-black-900);
+  font-weight: bold;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  color: var(--skin-color);
 }
+
 .about-section .skills .skill h2 {
   display: inline-block;
   font-size: 24px;
