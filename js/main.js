@@ -46,7 +46,7 @@
         hideNavMenu();
       }
     } else {
-      console.log("not contains");
+      // console.log("not contains");
     }
   });
 })();
@@ -149,12 +149,12 @@ var typewriter = new Typewriter(position, {
 });
 
 typewriter
-  .typeString("Software Developer")
+  .typeString('<strong style="font-weight: bold;">Software Developer</strong>')
   .pauseFor(2500)
   .deleteAll()
-  .typeString("Java Developer")
+  .typeString('<strong style="font-weight: bold;">Java Developer</strong>')
   .pauseFor(2500)
   .deleteAll()
-  .typeString("<strong>Web Developer</strong>")
+  .typeString('<strong style="font-weight: bold;">Web Developer</strong>')
   .pauseFor(2500)
   .start();
