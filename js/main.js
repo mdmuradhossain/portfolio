@@ -149,12 +149,12 @@ var typewriter = new Typewriter(position, {
 });
 
 typewriter
-  .typeString('<strong style="font-weight: bold;">Software Developer</strong>')
+  .typeString('<strong style="font-weight: bold;">Software Engineer</strong>')
   .pauseFor(2500)
   .deleteAll()
   .typeString('<strong style="font-weight: bold;">Java Developer</strong>')
   .pauseFor(2500)
   .deleteAll()
-  .typeString('<strong style="font-weight: bold;">Web Developer</strong>')
+  .typeString('<strong style="font-weight: bold;">Software/Web Developer</strong>')
   .pauseFor(2500)
   .start();
